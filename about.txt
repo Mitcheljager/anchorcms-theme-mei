@@ -1,0 +1,5 @@
+Theme name:    Mei
+Description:   Mei Theme
+Author name:   Mitchel
+Author site:   http://lorebook.net/
+License:       Standard
