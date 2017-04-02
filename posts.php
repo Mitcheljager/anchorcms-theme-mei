@@ -4,29 +4,20 @@
 
 	<?php if(has_posts()): ?>
 		<ul class="items">
-			<?php posts(); ?>
+			<?php while(posts()): ?>
 			<li>
 				<article class="wrap">
 					<h1>
 						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
 					</h1>
 
-					<!-- <div class="content">
-						<?php echo article_html(); ?>
-					</div> -->
+					<?php if(article_custom_field('image','')): ?>
+						<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('image',''); ?>" /></a>
+					<?php endif; ?>
 
 					<footer>
 						Posted <time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> by <?php echo article_author('real_name'); ?>.
 					</footer>
-				</article>
-			</li>
-			<?php $i = 0; while(posts()): ?>
-			<?php $bg = sprintf('background: hsl(215, 28%%, %d%%);', round(((++$i / posts_per_page()) * 20) + 20)); ?>
-			<li style="<?php echo $bg; ?>">
-				<article class="wrap">
-					<h2>
-						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a>
-					</h2>
 				</article>
 			</li>
 			<?php endwhile; ?>

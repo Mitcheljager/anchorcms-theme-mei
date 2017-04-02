@@ -17,8 +17,7 @@ h1 {
 .slidey {
 	overflow: hidden;
 	padding: 30px 0;
-
-	background: #f3f5f8;
+	background: #fff;
 	border-bottom: 1px solid #e5e8ed;
 }
 	.js-enabled .slidey {
@@ -119,40 +118,22 @@ h1 {
 	list-style: none;
 }
 	.items > li {
-		padding: 70px 0 60px;
-
-		color: #97aec9;
-		background: #3c4552;
+		padding: 20px 0;
+		background: #fff;
 	}
 		.posts .items > li:first-child {
 			background: #fff !important;
-			padding: 110px 0;
+			padding: 20px 0;
 		}
-			.items li h1 a, .posts .items > li:first-child h2 a {
-				color: #3d4551;
-			}
+
 	.items h1 {
 		padding: 0 0 8px;
 	}
 		.items h1 a {
 			text-decoration: none;
+			color: #505762;
 		}
-	.items h2 {
-		font-size: 32px;
-		line-height: 41px;
-	}
-		.items h2 a {
-			display: block;
-			padding-bottom: 12px;
 
-			color: #fff;
-			color: rgba(176,200,236,.8);
-
-			text-decoration: none;
-		}
-			.items h2 a:hover {
-				color: #fff;
-			}
 	.items .content {
 		padding: 10px 0 0;
 	}
@@ -194,7 +175,7 @@ h1 {
  *   Give some extra space to single-page wrappers
  */
 .content {
-	padding-bottom: 50px;
+	padding: 75px 0 50px;
 }
 	.content  ul, .content ol, .items li ul {
 		padding: 20px 30px;
@@ -213,7 +194,7 @@ h1 {
  */
 .footnote, .commentlist time, .items footer {
 	display: block;
-	padding: 5px 0 15px;
+	padding: 5px 0 0;
 
 	color: #98a2b1;
 	font-size: 14px;
@@ -342,8 +323,12 @@ ul.commentlist {
 	height: 400px;
 	position: relative;
 }
+	.header-collapsed {
+		height: 150px;
+	}
 
 .profile {
+	display: block;
 	width: 150px;
 	height: 150px;
 	border-radius: 50%;
@@ -358,3 +343,9 @@ ul.commentlist {
 	.profile img {
 		display: block;
 	}
+
+.main-title {
+	font-size: 54px;
+	text-align: center;
+	border-bottom: 1px solid #f1f1f1;
+}

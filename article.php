@@ -1,6 +1,6 @@
 <?php theme_include('header'); ?>
 		<section class="content wrap" id="article-<?php echo article_id(); ?>">
-			<h1><?php echo article_title(); ?></h1>
+			<h1 class="main-title"><?php echo article_title(); ?></h1>
 
 			<article>
 				<?php echo article_markdown(); ?>

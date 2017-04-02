@@ -1,7 +1,7 @@
 <?php theme_include('header'); ?>
 
 		<section class="content wrap">
-			<h1><?php echo page_title(); ?></h1>
+			<h1 class="main-title"><?php echo page_title(); ?></h1>
 
 			<?php echo page_content(); ?>
 		</section>

@@ -77,8 +77,8 @@
 				</nav>
 			</header>
 
-			<div class="header">
-				<div class="profile">
+			<div class="header <?php if(!is_homepage()): ?>header-collapsed<?php endif; ?>">
+				<a href="<?php echo base_url(); ?>" class="profile">
 					<img src="<?php echo theme_url('img/mei.jpg'); ?>" />
-				</div>
+				</a>
 			</div>
